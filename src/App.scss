@@ -1,0 +1,609 @@
+
+/* SCSS HEX */
+$true-blue: #0466c8ff;
+$usafa-blue: #0353a4ff;
+$dark-cornflower-blue: #023e7dff;
+$oxford-blue: #002855ff;
+$oxford-blue-2: #001845ff;
+$oxford-blue-3: #001233ff;
+$independence: #33415cff;
+$black-coral: #5c677dff;
+$roman-silver: #7d8597ff;
+$manatee: #979dacff;
+
+/* SCSS HSL */
+$true-blue: hsla(210, 96%, 40%, 1);
+$usafa-blue: hsla(210, 96%, 33%, 1);
+$dark-cornflower-blue: hsla(211, 97%, 25%, 1);
+$oxford-blue: hsla(212, 100%, 17%, 1);
+$oxford-blue-2: hsla(219, 100%, 14%, 1);
+$oxford-blue-3: hsla(219, 100%, 10%, 1);
+$independence: hsla(220, 29%, 28%, 1);
+$black-coral: hsla(220, 15%, 43%, 1);
+$roman-silver: hsla(222, 11%, 54%, 1);
+$manatee: hsla(223, 11%, 63%, 1);
+
+/* SCSS RGB */
+$true-blue: rgba(4, 102, 200, 1);
+$usafa-blue: rgba(3, 83, 164, 1);
+$dark-cornflower-blue: rgba(2, 62, 125, 1);
+$oxford-blue: rgba(0, 40, 85, 1);
+$oxford-blue-2: rgba(0, 24, 69, 1);
+$oxford-blue-3: rgba(0, 18, 51, 1);
+$independence: rgba(51, 65, 92, 1);
+$black-coral: rgba(92, 103, 125, 1);
+$roman-silver: rgba(125, 133, 151, 1);
+$manatee: rgba(151, 157, 172, 1);
+
+/* SCSS Gradient */
+
+$gradient-custom: linear-gradient(to bottom, $true-blue, $oxford-blue, $oxford-blue-3);
+$gradient-top: linear-gradient(0deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-right: linear-gradient(90deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-bottom: linear-gradient(180deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-left: linear-gradient(270deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-top-right: linear-gradient(45deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-bottom-right: linear-gradient(135deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-top-left: linear-gradient(225deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-bottom-left: linear-gradient(315deg, #0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+$gradient-radial: radial-gradient(#0466c8ff, #0353a4ff, #023e7dff, #002855ff, #001845ff, #001233ff, #33415cff, #5c677dff, #7d8597ff, #979dacff);
+
+/*
+.App {
+  text-align: center;
+  background: $oxford-blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+ */
+/*
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+ */
+
+.App-logo {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: none;
+  position: fixed;
+  height: auto;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.filler{
+  height: 150vh;
+  background: white;
+}
+
+
+.App-body{
+
+
+
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.App-footer{
+  background: $oxford-blue-2;
+  height: 1em;
+  margin: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 1000;
+  flex: 0 0 auto;
+}
+
+
+
+
+
+.Footer-text{
+  margin-left: 3vh;
+}
+
+.Footer-line{
+  margin-left: 3vh;
+  color: $independence;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+body, .App {
+  height: 100vh;
+
+
+}
+
+body {
+  margin: 0;
+  //overflow scrollable
+  overflow-x:hidden;
+  overflow-y:scroll;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+.rightAng {
+  width: 80rem;
+  height: 20rem;
+  background: url('https://images5.alphacoders.com/106/1064762.jpg') center no-repeat;
+  filter: brightness(50%);
+  background-size: cover;
+  clip-path: polygon(100% 0, 0% 100%, 0 0);
+  animation: clips 3s ease infinite;
+}
+
+.bubbles{
+
+  position: absolute;
+
+  width: 90%;
+  height: 140%;
+  z-index: 0;
+  overflow: hidden;
+
+
+
+}
+
+
+
+.bubbles li{
+  transition: all .2s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: block;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  bottom: -100px;
+  animation: square 20s infinite;
+  transition-timing-function: linear;
+}
+
+.bubbles2 li{
+  transition: all .2s ease-in-out;
+  position: absolute;
+  list-style: none;
+  display: block;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+  bottom: -100px;
+  animation: square 20s infinite;
+  transition-timing-function: linear;
+}
+
+.bubbles2{
+
+  position: absolute;
+
+  width: 90%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+
+
+
+}
+
+.bubbles2 li:nth-child(1){
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-delay: 0s;
+  animation-duration: 3s;
+}
+
+
+.bubbles2 li:nth-child(2){
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 0s;
+  animation-duration: 4s;
+}
+
+.bubbles2 li:nth-child(3){
+  width: 10px;
+  height: 10px;
+  left: 66%;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.bubbles2 li:nth-child(4){
+  width: 15px;
+  height: 15px;
+  left: 20%;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+
+.bubbles2 li:nth-child(5){
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  animation-delay: 5s;
+  animation-duration: 4s;
+}
+
+.bubbles2 li:nth-child(6){
+  width: 60px;
+  height: 60px;
+  left: 10%;
+  animation-delay: 6s;
+  animation-duration: 5s;
+}
+
+.bubbles2 li:nth-child(7){
+  width: 70px;
+  height: 70px;
+  left: 10%;
+  animation-delay: 2s;
+  animation-duration: 6s;
+}
+
+.bubbles2 li:hover{
+
+  animation: emptyanim 2s 2s;
+
+
+
+
+
+
+}
+
+.bubbles li:nth-child(1){
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+
+.bubbles li:nth-child(2){
+  width: 60px;
+  height: 60px;
+  left: 40%;
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+
+.bubbles li:nth-child(3){
+  width: 10px;
+  height: 10px;
+  left: 66%;
+  animation-delay: 4s;
+  animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4){
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+}
+
+.bubbles li:nth-child(5){
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  animation-delay: 7s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(6){
+  width: 90px;
+  height: 90px;
+  left: 10%;
+  animation-delay: 6s;
+  animation-duration: 16s;
+}
+
+.bubbles li:nth-child(7){
+  width: 40px;
+  height: 40px;
+  left: 90%;
+  animation-delay: 2s;
+  animation-duration: 18s;
+}
+
+.bubbles li:hover{
+
+  animation: emptyanim 2s 2s;
+
+
+
+
+
+
+}
+@keyframes emptyanim {}
+
+
+
+
+
+@keyframes square {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(630deg);
+
+  }
+}
+
+
+
+main {
+
+  overflow: scroll;
+  background: $gradient-custom;
+  background-position: top;
+
+  background-attachment: local;
+  flex: 1;
+
+  overflow: hidden;
+  //make a background gradient which the first page is oxford blue 3 but as you scroll down it will get darker
+
+  //extend the first part of the gradient to the bottom
+  background-size: 100% 100%;
+
+
+
+  min-height: 200%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+
+}
+
+footer {
+
+
+  content-visibility: hidden;
+  overflow: hidden;
+
+}
+
+
+footer:hover {
+  height: 3em;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  content-visibility: visible;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+::-webkit-scrollbar * {
+  background:transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+  background: transparent;
+  border-radius: 10px;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: url("wheel.svg");
+  background-repeat: no-repeat;
+  background-size: 5vh;
+  scroll-margin-right: 5vh;
+  border-radius: 1rem;
+  max-height: 0.1vh;
+
+
+
+
+}
+
+
+::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 10px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 30vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $black-coral;
+}
+
+box{
+  width: 100%;
+  height: 140%;
+  background: $oxford-blue-3;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $true-blue;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+          typing 3.5s steps(20, end),
+          blink-caret 1s step-end infinite ;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+
+
+.break{
+  padding-bottom: 800px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wheel{
+  //hook top right of screen
+
+  top: 0;
+  left: 0;
+  width: 10vh;
+  height: 10vh;
+  z-index: 1000;
+  pointer-events: none;
+
+
+
+
+}
+.wheelfloat{
+  animation: float 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+  /*webkit*/
+  -webkit-animation-fill-mode: forwards;
+}
+
+.wheel-spin{
+  animation-delay: 2s;
+  animation-duration: 17s;
+}
+
+.wheel-wrapper{
+  //align to right
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10vh;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.seabed{
+  pointer-events: none;
+}
+
+.seabed-wrapper{
+  position: relative;
+
+  width: 100%;
+
+  height: auto;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.seabed-wrapper img {
+  position: absolute;
+  top: 10%;
+  bottom: 0;
+
+}
+
+.rock1{
+  position: absolute;
+  pointer-events: all;
+  bottom: 20vh !important;
+  left: 10%;
+  width: 20vh;
+  height: 20vh;
+  z-index: 2;
+;
+}
+
+@keyframes float {
+  0% {
+
+    transform: translatey(70%);
+  }
+  50% {
+
+    transform: translatey(200%);
+  }
+  100% {
+
+    transform: translatey(70%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
